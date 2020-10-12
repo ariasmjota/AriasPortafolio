@@ -1,0 +1,195 @@
+html {
+  font-size: 100%;
+  /* 100% = 16px */
+}
+
+html a, html p {
+  text-decoration: none;
+  outline: none;
+  background: none;
+  color: none;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Neue Haas Grotesk Display Pro', sans-serif;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+}
+
+h1 {
+  font-size: 40px;
+  line-height: 1.5;
+  letter-spacing: -.2px;
+  color: white;
+  margin: 0;
+  /* margin: 100px 150px 70px 30px; */
+  /* text-transform: uppercase; */
+  /* text-decoration: dashed; */
+}
+
+h1 strong {
+  color: #026fff;
+}
+
+h2 {
+  color: #026fff;
+  text-transform: uppercase;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: bold;
+  font-size: 24px;
+  margin-bottom: 40px;
+}
+
+.navBar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 2rem;
+}
+
+.navBar ul {
+  margin: 0;
+}
+
+.navBar__logo {
+  width: 20%;
+}
+
+.navBar__logo img {
+  width: 100%;
+}
+
+.navBar__menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+.navBar__menu li {
+  list-style-type: none;
+}
+
+.navBar__menu a {
+  font-size: 1rem;
+  margin: 0 1.5rem;
+  text-decoration: none;
+  color: #616160;
+  position: relative;
+  cursor: pointer;
+  outline: none;
+  background: none;
+  text-transform: uppercase;
+}
+
+.navBar a::after {
+  content: "";
+  display: block;
+  font-size: 1em;
+  height: 0.2rem;
+  background: #509CFF;
+  position: absolute;
+  width: 100%;
+  left: 0px;
+  bottom: 0.5rem;
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+  -webkit-transform: scale(0, 1);
+          transform: scale(0, 1);
+}
+
+.navBar a:hover::after {
+  -webkit-transform: scale(1, 1);
+          transform: scale(1, 1);
+}
+
+.navBar a:focus::after {
+  -webkit-transform: scale(1, 1);
+          transform: scale(1, 1);
+}
+
+.navBar--active::after {
+  -webkit-transform: scale(1, 1);
+          transform: scale(1, 1);
+}
+
+.home {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+}
+
+.home__bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+  color: #616160;
+  margin-top: 5%;
+}
+
+.home__bottom-left {
+  width: 50%;
+  margin-left: 5%;
+}
+
+.home__bottom-right {
+  width: 50%;
+  margin-right: 5%;
+}
+
+.home__tittles {
+  width: 50%;
+  margin-left: 5%;
+  font-size: 3rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 2rem;
+}
+
+.home__tittles-one {
+  color: #ACACAB;
+}
+
+.home__tittles-two {
+  color: #A7CDFF;
+}
+
+.home__tittles-three {
+  color: #7C7C7C;
+}
+
+.home__tittles-four {
+  color: #73B0FF;
+}
+/*# sourceMappingURL=styles.css.map */
