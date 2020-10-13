@@ -161,10 +161,12 @@ h2 {
 .home__bottom-left {
   width: 50%;
   margin-left: 5%;
+  margin-right: 5%;
 }
 
 .home__bottom-right {
   width: 50%;
+  margin-left: 5%;
   margin-right: 5%;
 }
 
@@ -191,5 +193,62 @@ h2 {
 
 .home__tittles-four {
   color: #73B0FF;
+}
+
+.about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 90%;
+  margin-left: 5%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.about__left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 50%;
+}
+
+.about__left-top {
+  font-size: 3rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 2rem;
+}
+
+.about__right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 50%;
+  height: 25rem;
+  overflow: hidden;
+}
+
+.about__right-photo {
+  -webkit-filter: grayscale(60%);
+          filter: grayscale(60%);
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 /*# sourceMappingURL=styles.css.map */

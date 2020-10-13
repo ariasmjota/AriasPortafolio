@@ -5,7 +5,7 @@ import {Portafolio} from './Containers/Portafolio/Portafolio';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Portafolio />
+    <Portafolio/>
   </React.StrictMode>,
   document.getElementById('root')
 );

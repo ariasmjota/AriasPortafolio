@@ -1,0 +1,34 @@
+.about {
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  margin-left: 5%;
+  justify-content: space-between;
+  align-items: center;
+  
+    &__left {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+
+            &-top {
+            font-size: 3rem;
+            font-weight: 900;
+            text-transform: uppercase;
+            letter-spacing: 2rem;
+            }
+        }
+    &__right {
+        display: flex;
+        flex-direction: row;
+        width: 50%;
+        height: 25rem;
+        overflow: hidden;
+
+            &-photo {
+            filter: grayscale(60%);
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+}

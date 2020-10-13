@@ -1,15 +1,5 @@
 import * as React from "react";
-import {
-  Bounce,
-  Fade,
-  Flip,
-  Hinge,
-  JackInTheBox,
-  Roll,
-  Rotate,
-  Slide,
-  Zoom,
-} from "react-awesome-reveal";
+import { JackInTheBox, Bounce } from "react-awesome-reveal";
 
 export const Portafolio = () => {
   return (
@@ -18,7 +8,7 @@ export const Portafolio = () => {
       <section class="navBar">
         <img
           class="navBar__logo"
-          src="./assets/svg/LogoArias.svg"
+          src={process.env.PUBLIC_URL + '/assets/svg/LogoArias.svg'}
           alt="Logo Maria Arias"
         ></img>
 
@@ -81,16 +71,53 @@ export const Portafolio = () => {
         <div class="home__bottom">
           <article class="home__bottom-left">
             <p>
-              An <stronger>Interaction Designer</stronger> and UI/UX Developer from Cali, Colombia.
+              An Interaction Designer and UI/UX Developer from Cali, Colombia.
             </p>
             <p>
-              I'm a passionate about <stronger>problem-solving</stronger> challenges through design.
+              I'm a passionate about problem-solving challenges through design.
             </p>
           </article>
           <article class="home__bottom-right">
-              <p>Hello, I'm a passionate about problem-solving challenges through design. I have run and manage research, ideation and iteration of digital products in order to make them human-centered, easy-to-use and visually appealing, additionally I enjoy learning about web design and front-end development.</p>
+            <p>
+              Hello, I'm a passionate about problem-solving challenges through
+              design. I have run and manage research, ideation and iteration of
+              digital products in order to make them human-centered, easy-to-use
+              and visually appealing, additionally I enjoy learning about web
+              design and front-end development.
+            </p>
           </article>
         </div>
+      </section>
+      <section class="about">
+        <article class="about__left">
+          <section class="about__left-top">
+            <div class="home__tittles-four">
+              <Bounce>
+                <p>María Jose</p>
+              </Bounce>
+            </div>
+            <div class="home__tittles-three">
+              <Bounce>
+                <p>Arias B.</p>
+              </Bounce>
+            </div>
+          </section>
+          <section class="about__left-bottom">
+            <p>
+              Hello, I am an Interactive Media Designer student at Icesi University in Cali, Colombia, currently in my last year.
+            </p>
+            <p>
+              I'm a passionate about problem-solving challenges through design. I have run and manage research, ideation and iteration of digital products in order to make them human-centered, easy-to-use and visually appealing, Web Design and Front-end Development.
+            </p>
+          </section>
+        </article>
+        <article class="about__right">
+        <img
+          class="about__right-photo"
+          src={process.env.PUBLIC_URL + '/assets/images/me.jpg'}
+          alt="Logo Maria Arias"
+        ></img>
+        </article>
       </section>
     </div>
   );
