@@ -8,7 +8,7 @@ export const Portafolio = () => {
       <section class="navBar">
         <img
           class="navBar__logo"
-          src={process.env.PUBLIC_URL + '/assets/svg/LogoArias.svg'}
+          src={process.env.PUBLIC_URL + "/assets/svg/logoArias.svg"}
           alt="Logo Maria Arias"
         ></img>
 
@@ -49,19 +49,19 @@ export const Portafolio = () => {
             </div>
 
             <div class="home__tittles-two">
-              <JackInTheBox delay={1000}>
+              <JackInTheBox delay={500}>
                 <p>ideas</p>
               </JackInTheBox>
             </div>
 
             <div class="home__tittles-three">
-              <JackInTheBox delay={2000}>
+              <JackInTheBox delay={1000}>
                 <p>Projects</p>
               </JackInTheBox>
             </div>
 
             <div class="home__tittles-four">
-              <JackInTheBox delay={3000}>
+              <JackInTheBox delay={1500}>
                 <p>solutions</p>
               </JackInTheBox>
             </div>
@@ -93,7 +93,7 @@ export const Portafolio = () => {
           <section class="about__left-top">
             <div class="home__tittles-four">
               <Bounce>
-                <p>María Jose</p>
+                <p>María José</p>
               </Bounce>
             </div>
             <div class="home__tittles-three">
@@ -104,20 +104,57 @@ export const Portafolio = () => {
           </section>
           <section class="about__left-bottom">
             <p>
-              Hello, I am an Interactive Media Designer student at Icesi University in Cali, Colombia, currently in my last year.
+              Hello, I am an Interactive Media Designer student at Icesi
+              University in Cali, Colombia, currently in my last year.
             </p>
             <p>
-              I'm a passionate about problem-solving challenges through design. I have run and manage research, ideation and iteration of digital products in order to make them human-centered, easy-to-use and visually appealing, Web Design and Front-end Development.
+              I'm a passionate about problem-solving challenges through design.
+              I have run and manage research, ideation and iteration of digital
+              products in order to make them human-centered, easy-to-use and
+              visually appealing, Web Design and Front-end Development.
             </p>
           </section>
         </article>
         <article class="about__right">
-        <img
-          class="about__right-photo"
-          src={process.env.PUBLIC_URL + '/assets/images/me.jpg'}
-          alt="Logo Maria Arias"
-        ></img>
+          <img
+            class="about__right-photo"
+            src={process.env.PUBLIC_URL + "/assets/images/me.jpg"}
+            alt="Logo Maria Arias"
+          ></img>
         </article>
+      </section>
+
+      <section class="skills">
+        <article  class="skills__tittle">
+        <div class="home__tittles-four">
+        
+          <Bounce>
+            <p>Skills</p>
+          </Bounce>
+        </div>
+        </article>
+        <ul class="skills__menu">
+          <li>
+            <a>
+              <span>Js</span>
+            </a>
+          </li>
+          <li>
+            <a>
+              <span>UX</span>
+            </a>
+          </li>
+          <li>
+            <a>
+              <span>UR</span>
+            </a>
+          </li>
+          <li>
+            <a>
+              <span>UI</span>
+            </a>
+          </li>
+        </ul>
       </section>
     </div>
   );

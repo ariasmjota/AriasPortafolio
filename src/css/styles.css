@@ -143,6 +143,7 @@ h2 {
       -ms-flex-direction: column;
           flex-direction: column;
   width: 100%;
+  margin: 10% 0%;
 }
 
 .home__bottom {
@@ -205,12 +206,13 @@ h2 {
           flex-direction: row;
   width: 90%;
   margin-left: 5%;
+  margin-bottom: 10%;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
 .about__left {
@@ -222,6 +224,8 @@ h2 {
       -ms-flex-direction: column;
           flex-direction: column;
   width: 50%;
+  margin-right: 10%;
+  color: #616160;
 }
 
 .about__left-top {
@@ -229,6 +233,7 @@ h2 {
   font-weight: 900;
   text-transform: uppercase;
   letter-spacing: 2rem;
+  margin-bottom: 5%;
 }
 
 .about__right {
@@ -250,5 +255,78 @@ h2 {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.skills ul {
+  margin: 0;
+}
+
+.skills__tittle {
+  width: 50%;
+  margin-left: 5%;
+  font-size: 3rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 2rem;
+}
+
+.skills__menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  margin-top: 10%;
+}
+
+.skills__menu li {
+  list-style-type: none;
+}
+
+.skills__menu a {
+  font-size: 1rem;
+  margin: 0 3rem;
+  padding: 2rem;
+  text-decoration: none;
+  color: #616160;
+  position: relative;
+  cursor: pointer;
+  outline: none;
+  background: none;
+  text-transform: uppercase;
+}
+
+.skills a::after {
+  content: "";
+  display: block;
+  font-size: 1em;
+  height: 0.2rem;
+  background: #509CFF;
+  position: absolute;
+  width: 100%;
+  left: 0px;
+  bottom: 0 rem;
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+  -webkit-transform: scale(0, 1);
+          transform: scale(0, 1);
+}
+
+.skills a:hover::after {
+  -webkit-transform: scale(1, 1);
+          transform: scale(1, 1);
+}
+
+.skills a:focus::after {
+  -webkit-transform: scale(1, 1);
+          transform: scale(1, 1);
+}
+
+.skills--active::after {
+  -webkit-transform: scale(1, 1);
+          transform: scale(1, 1);
 }
 /*# sourceMappingURL=styles.css.map */
