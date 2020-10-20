@@ -1,16 +1,16 @@
-$base-colorBlue: #509CFF;
-$intermediate-colorBlue: #73B0FF;
-$light-colorBlue: #A7CDFF;
+$base-colorBlue: #509cff;
+$intermediate-colorBlue: #73b0ff;
+$light-colorBlue: #a7cdff;
 
 $base-colorGray: #616160;
-$intermediate-colorGray: #7C7C7C;
-$light-colorGray: #ACACAB;
+$intermediate-colorGray: #7c7c7c;
+$light-colorGray: #acacab;
 
 html {
-
   font-size: 100%; /* 100% = 16px */
 
-  & a, p {
+  & a,
+  p {
     text-decoration: none;
     outline: none;
     background: none;
@@ -21,33 +21,51 @@ html {
 }
 
 body {
-    font-family: 'Neue Haas Grotesk Display Pro', sans-serif;
-    margin: 0;
-    box-sizing: border-box;
-    padding: 0;
- 
+  font-family: "Neue Haas Grotesk Display Pro", sans-serif;
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
 }
 h1 {
-    font-size: 40px;
-    line-height: 1.5;
-    letter-spacing: -.2px;
-    color: white;
-    margin: 0;
-    /* margin: 100px 150px 70px 30px; */
-    /* text-transform: uppercase; */
-    /* text-decoration: dashed; */
-  }
-  h1 strong {
-    color: #026fff;
-  }
-  h2 {
-    color: #026fff;
-    text-transform: uppercase;
-    font-family: 'Source Sans Pro', sans-serif;
-    font-weight: bold;
-    font-size: 24px;
-    margin-bottom: 40px;
-  }
+  font-size: 40px;
+  line-height: 1.5;
+  letter-spacing: -0.2px;
+  color: white;
+  margin: 0;
+  /* margin: 100px 150px 70px 30px; */
+  /* text-transform: uppercase; */
+  /* text-decoration: dashed; */
+}
+h1 {
+  font-size: 3rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 3rem;
+}
+h2 {
+  color:$light-colorBlue;
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 1.5rem;
+  letter-spacing: 1rem;
+}
+
+h3 {
+  font-size: 1.2rem;
+}
+
+h4 {
+  font-size: 1rem;
+}
+
+a,
+p,
+span,
+li {
+  list-style-type: none;
+  font-size: o.5rem;
+  text-decoration: none;
+}
 
 @import "./Nav";
 @import "./Home";

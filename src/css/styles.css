@@ -3,7 +3,8 @@ html {
   /* 100% = 16px */
 }
 
-html a, html p {
+html a,
+html p {
   text-decoration: none;
   outline: none;
   background: none;
@@ -13,7 +14,7 @@ html a, html p {
 }
 
 body {
-  font-family: 'Neue Haas Grotesk Display Pro', sans-serif;
+  font-family: "Neue Haas Grotesk Display Pro", sans-serif;
   margin: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -23,7 +24,7 @@ body {
 h1 {
   font-size: 40px;
   line-height: 1.5;
-  letter-spacing: -.2px;
+  letter-spacing: -0.2px;
   color: white;
   margin: 0;
   /* margin: 100px 150px 70px 30px; */
@@ -31,17 +32,36 @@ h1 {
   /* text-decoration: dashed; */
 }
 
-h1 strong {
-  color: #026fff;
+h1 {
+  font-size: 3rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 3rem;
 }
 
 h2 {
-  color: #026fff;
+  color: #a7cdff;
   text-transform: uppercase;
-  font-family: 'Source Sans Pro', sans-serif;
-  font-weight: bold;
-  font-size: 24px;
-  margin-bottom: 40px;
+  font-weight: 300;
+  font-size: 1.5rem;
+  letter-spacing: 1rem;
+}
+
+h3 {
+  font-size: 1.2rem;
+}
+
+h4 {
+  font-size: 1rem;
+}
+
+a,
+p,
+span,
+li {
+  list-style-type: none;
+  font-size: o 0.5rem;
+  text-decoration: none;
 }
 
 .navBar {
@@ -85,14 +105,9 @@ h2 {
   transition: all 0.4s ease;
 }
 
-.navBar__menu li {
-  list-style-type: none;
-}
-
 .navBar__menu a {
   font-size: 1rem;
   margin: 0 1.5rem;
-  text-decoration: none;
   color: #616160;
   position: relative;
   cursor: pointer;
@@ -106,7 +121,7 @@ h2 {
   display: block;
   font-size: 1em;
   height: 0.2rem;
-  background: #509CFF;
+  background: #509cff;
   position: absolute;
   width: 100%;
   left: 0px;
@@ -181,19 +196,19 @@ h2 {
 }
 
 .home__tittles-one {
-  color: #ACACAB;
+  color: #acacab;
 }
 
 .home__tittles-two {
-  color: #A7CDFF;
+  color: #a7cdff;
 }
 
 .home__tittles-three {
-  color: #7C7C7C;
+  color: #7c7c7c;
 }
 
 .home__tittles-four {
-  color: #73B0FF;
+  color: #73b0ff;
 }
 
 .about {
@@ -229,11 +244,11 @@ h2 {
 }
 
 .about__left-top {
-  font-size: 3rem;
   font-weight: 900;
   text-transform: uppercase;
+  font-size: 3rem;
   letter-spacing: 2rem;
-  margin-bottom: 5%;
+  margin-bottom: 10%;
 }
 
 .about__right {
@@ -257,13 +272,26 @@ h2 {
      object-fit: cover;
 }
 
+.skills {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 90%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .skills ul {
-  margin: 0;
+  margin: 0%;
+  padding: 0;
 }
 
 .skills__tittle {
-  width: 50%;
-  margin-left: 5%;
   font-size: 3rem;
   font-weight: 900;
   text-transform: uppercase;
@@ -274,21 +302,22 @@ h2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   position: relative;
   -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;
   margin-top: 10%;
-}
-
-.skills__menu li {
-  list-style-type: none;
+  width: 50%;
 }
 
 .skills__menu a {
   font-size: 1rem;
-  margin: 0 3rem;
-  padding: 2rem;
-  text-decoration: none;
   color: #616160;
   position: relative;
   cursor: pointer;
@@ -297,12 +326,12 @@ h2 {
   text-transform: uppercase;
 }
 
-.skills a::after {
+.skills__menu a::after {
   content: "";
   display: block;
   font-size: 1em;
   height: 0.2rem;
-  background: #509CFF;
+  background: #509cff;
   position: absolute;
   width: 100%;
   left: 0px;
@@ -315,18 +344,42 @@ h2 {
           transform: scale(0, 1);
 }
 
-.skills a:hover::after {
+.skills__menu a:hover::after {
   -webkit-transform: scale(1, 1);
           transform: scale(1, 1);
 }
 
-.skills a:focus::after {
+.skills__menu a:focus::after {
   -webkit-transform: scale(1, 1);
           transform: scale(1, 1);
 }
 
-.skills--active::after {
+.skills__menu--active::after {
   -webkit-transform: scale(1, 1);
           transform: scale(1, 1);
+}
+
+.skills__sections {
+  width: 50%;
+}
+
+.software {
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.software i {
+  background-color: #509cff;
+  border-radius: 100%;
+  padding: 2%;
+  font-size: 5rem;
 }
 /*# sourceMappingURL=styles.css.map */

@@ -39,7 +39,7 @@ export const Portafolio = () => {
           </li>
         </ul>
       </section>
-      <section class="home">
+      <section id="/#/" class="home">
         <div class="home__top">
           <article class="home__tittles">
             <div class="home__tittles-one">
@@ -88,7 +88,7 @@ export const Portafolio = () => {
           </article>
         </div>
       </section>
-      <section class="about">
+      <section id="/#/about" class="about">
         <article class="about__left">
           <section class="about__left-top">
             <div class="home__tittles-four">
@@ -119,19 +119,18 @@ export const Portafolio = () => {
           <img
             class="about__right-photo"
             src={process.env.PUBLIC_URL + "/assets/images/me.jpg"}
-            alt="Logo Maria Arias"
+            alt="Photo Maria Arias"
           ></img>
         </article>
       </section>
 
       <section class="skills">
-        <article  class="skills__tittle">
-        <div class="home__tittles-four">
-        
-          <Bounce>
-            <p>Skills</p>
-          </Bounce>
-        </div>
+        <article class="skills__tittle">
+          <div class="home__tittles-four">
+            <Bounce>
+              <p>Skills</p>
+            </Bounce>
+          </div>
         </article>
         <ul class="skills__menu">
           <li>
@@ -155,6 +154,77 @@ export const Portafolio = () => {
             </a>
           </li>
         </ul>
+        <article class="skills__sections">
+          <article class="skills__opa">
+            <div id="skills__explications-web" class="skills__explications-web web">
+              <article class="skills__explications-web-left">
+              <h2 >Front-end Development</h2>
+              <p>
+                Able to define the form, function, usability, ergonomics, brand
+                image and other aspects that affect the external appearance of
+                user interfaces in systems of all types, all this through
+                principles of visual and graphic design.
+              </p>
+              </article>
+              <div class="software">
+                <i class="fab fa-css3-alt"></i>
+                <i class="fab fa-html5"></i>
+                <i class="fab fa-js"></i>
+                <i class="fab fa-react"></i>
+              </div>
+            </div>
+
+            <div id="skills__explications-ux" class="content">
+              <h2>User Experience Design</h2>
+              <p>
+                Able to create products, solutions or prototypes, combining
+                different kinds of methodologies, that customers / users would
+                be attracted to, be easy to use and quickly to understand, in
+                order to bring them the best experience possible.
+              </p>
+
+              <div class="software">
+                <i class="fab fa-adobe"></i>
+                <i class="fab fa-figma"></i>
+                <i class="fab fa-invision"></i>
+              </div>
+            </div>
+
+            <div id="skills__explications-ui" class="content">
+              <h2>User Interface Design</h2>
+              <p>
+                Able to define the form, function, usability, ergonomics, brand
+                image and other aspects that affect the external appearance of
+                user interfaces in systems of all types, all this through
+                principles of visual and graphic design.
+              </p>
+
+              <div class="software">
+                <i class="fab fa-adobe"></i>
+                <i class="fab fa-figma"></i>
+              </div>
+            </div>
+
+            <div id="skills__explications-research" class="content">
+              <h2>User Research</h2>
+              <p>
+                Able to define the form, function, usability, ergonomics, brand
+                image and other aspects that affect the external appearance of
+                user interfaces in systems of all types, all this through
+                principles of visual and graphic design.
+              </p>
+
+              <div class="software">
+                <i class="fas fa-eye"></i>
+                <i class="fas fa-sticky-note"></i>
+                <i class="fas fa-book-reader"></i>
+                <i class="fas fa-map"></i>
+                <i class="fas fa-clipboard-list"></i>
+              </div>
+            </div>
+          </article>
+          
+        </article>
       </section>
     </div>
   );
