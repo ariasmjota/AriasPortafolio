@@ -123,7 +123,7 @@ export const Portafolio = () => {
           ></img>
         </article>
       </section>
-
+<div class="skillsandexpertice">
       <section class="skills">
         <article class="skills__tittle">
           <div class="home__tittles-four">
@@ -155,17 +155,15 @@ export const Portafolio = () => {
           </li>
         </ul>
         <article class="skills__sections">
-          <article class="skills__opa">
-            <div id="skills__explications-web" class="skills__explications-web web">
-              <article class="skills__explications-web-left">
-              <h2 >Front-end Development</h2>
+          <article class="skills__explications">
+            <div id="skills__explications-web" class="skills__explications-web">
+              <h2>Front-end Development</h2>
               <p>
                 Able to define the form, function, usability, ergonomics, brand
                 image and other aspects that affect the external appearance of
                 user interfaces in systems of all types, all this through
                 principles of visual and graphic design.
               </p>
-              </article>
               <div class="software">
                 <i class="fab fa-css3-alt"></i>
                 <i class="fab fa-html5"></i>
@@ -205,7 +203,7 @@ export const Portafolio = () => {
               </div>
             </div>
 
-            <div id="skills__explications-research" class="content">
+            <div id="skills__explications-ur" class="content">
               <h2>User Research</h2>
               <p>
                 Able to define the form, function, usability, ergonomics, brand
@@ -223,9 +221,109 @@ export const Portafolio = () => {
               </div>
             </div>
           </article>
-          
         </article>
       </section>
+
+      <article class="expertise">
+      <article class="expertise__tittle">
+          <div class="home__tittles-four">
+            <Bounce>
+              <p>expertise</p>
+            </Bounce>
+          </div>
+        </article>
+        <ul class="expertise__menu">
+          <li>
+            <a>
+              <span>LS</span>
+            </a>
+          </li>
+          <li>
+            <a>
+              <span>TW</span>
+            </a>
+          </li>
+          <li>
+            <a>
+              <span>AT</span>
+            </a>
+          </li>
+          <li>
+            <a>
+              <span>BF</span>
+            </a>
+          </li>
+        </ul>
+        <div class="skills__sections">
+          <article class="skills__explications">
+            <div id="leaderContent" class="skills__explications">
+              <h2>Leadership</h2>
+              <p>
+                Able to define the form, function, usability, ergonomics, brand
+                image and other aspects that affect the external appearance of
+                user interfaces in systems of all types, all this through
+                principles of visual and graphic design.
+              </p>
+
+              <div class="software">
+                <i class="fas fa-users"></i>
+                <i class="fas fa-chalkboard-teacher"></i>
+                <i class="fas fa-balance-scale"></i>
+              </div>
+            </div>
+
+            <div id="teamContent" class="skills__explications">
+              <h2>TeamWork</h2>
+              <p>
+                Able to create products, solutions or prototypes, combining
+                different kinds of methodologies, that customers / users would
+                be attracted to, be easy to use and quickly to understand, in
+                order to bring them the best experience possible.
+              </p>
+
+              <div class="software">
+                <i class="fas fa-comments"></i>
+                <i class="fab fa-slack"></i>
+                <i class="fas fa-handshake"></i>
+              </div>
+            </div>
+
+            <div id="analyticContent" class="skills__explications">
+              <h2>Analytical Thinking</h2>
+              <p>
+                Able to define the form, function, usability, ergonomics, brand
+                image and other aspects that affect the external appearance of
+                user interfaces in systems of all types, all this through
+                principles of visual and graphic design.
+              </p>
+
+              <div class="software">
+                <i class="fas fa-puzzle-piece"></i>
+                <i class="fas fa-map-signs"></i>
+                <i class="fas fa-cogs"></i>
+              </div>
+            </div>
+
+            <div id="businessContent" class="skills__explications">
+              <h2>Business Focused</h2>
+              <p>
+                Able to define the form, function, usability, ergonomics, brand
+                image and other aspects that affect the external appearance of
+                user interfaces in systems of all types, all this through
+                principles of visual and graphic design.
+              </p>
+
+              <div class="software">
+                <i class="fas fa-chart-line"></i>
+                <i class="fas fa-percent"></i>
+                <i class="fas fa-dollar-sign"></i>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </article>
+      </div>
     </div>
   );
 };
