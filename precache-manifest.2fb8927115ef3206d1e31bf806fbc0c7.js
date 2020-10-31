@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "b88abdb1277fb5acc714af8dd0718730",
+    "revision": "f96269d123cbc879dad287ef0f0bdf2a",
     "url": "/AriasPortafolio/index.html"
   },
   {
-    "revision": "fa7f93b5e7e872e77f12",
-    "url": "/AriasPortafolio/static/css/main.2ca93f55.chunk.css"
+    "revision": "b8c4572ca5e103fbdb08",
+    "url": "/AriasPortafolio/static/css/main.8d59a7c4.chunk.css"
   },
   {
     "revision": "51da82457ac5e95112cd",
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/AriasPortafolio/static/js/2.fbbe9e20.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "fa7f93b5e7e872e77f12",
-    "url": "/AriasPortafolio/static/js/main.d178d680.chunk.js"
+    "revision": "b8c4572ca5e103fbdb08",
+    "url": "/AriasPortafolio/static/js/main.ba3641de.chunk.js"
   },
   {
     "revision": "5f06d60f789a9996fcab",
