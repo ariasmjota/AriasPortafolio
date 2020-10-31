@@ -1,0 +1,13 @@
+.projects{
+    display: flex;
+    width: 90%;
+    margin: 5%;
+    flex-direction: column;
+&__titles{
+    font-size: 3rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 2rem;
+    margin-bottom: 5%;
+}
+}

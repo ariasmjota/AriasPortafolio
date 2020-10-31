@@ -2,15 +2,22 @@
    display: flex;
    flex-direction: column;
    width: 100%;
-   margin: 10% 0%;
+   margin: 0%;
+   margin-bottom: 5%;
+
+   &__top{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+   }
 
    &__bottom{
     display: flex;
     flex-direction: row;
     width: 100%;
     color: $base-colorGray ;
-    margin-top: 5%;
-
+margin-top: -5%;
     &-left{
         width: 50%;
         margin-left: 5%;
@@ -24,7 +31,7 @@
    }
 
 
-&__tittles {
+&__titles {
     width: 50%;
     margin-left: 5%;
     font-size: 3rem;
@@ -44,5 +51,14 @@
     &-four{
         color: $intermediate-colorBlue;
     }
+}
+&__project{
+    width: 50%;
+    align-items: center;
+    
+&-img{
+    width: 50%;
+    margin-left: 25%;
+}
 }
 }
