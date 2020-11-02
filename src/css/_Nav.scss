@@ -1,64 +1,66 @@
-.navBar{
+.navBar {
+  position: fixed;
+  z-index: 2;
+  display: flex;
+  width: 90%;
+  margin: 2% 5%;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 
+  & ul {
+    margin: 0;
+  }
+
+  &__logo {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;  
-    align-items: center;
-    padding-bottom: 2rem;
-
-    & ul{
-        margin: 0;
+    width: 3%;
+    color:$primary;
+    img{
+        color: $primary;
     }
+  }
 
-        &__logo {
-            
-            & img{
-                width: 100%;
-                
-            }
-        width: 20%;
-        }  
+  &__menu {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    transition: all 0.4s ease;
 
-        &__menu {
-        display: flex;
-        justify-content: space-between;
-        position: relative;
-        transition: all 0.4s ease;
-
-            & a{
-                font-size: 1rem;
-                margin: 0 1.5rem ;
-                color: $base-colorGray;
-                position: relative;
-                cursor: pointer;
-                outline: none;
-                background: none;
-                text-transform: uppercase;
-            }
-        } 
-            & a::after {
-                content: "";
-                display: block;
-                font-size: 1em;
-                height: 0.2rem;
-                background: $base-colorBlue;
-                position: absolute;
-                width: 100%;
-                left: 0px;
-                bottom: 0.5rem;
-                transition: transform 0.3s ease;
-                transform: scale(0, 1);
-            }
-            & a:hover::after {
-                transform: scale(1, 1);
-            }
-            & a:focus::after {
-                transform: scale(1, 1);
-            }
-            &--active::after {
-                transform: scale(1, 1);
-            }
-            i{
-                display: none;
-            }
-    }  
+    & a {
+      font-size: 1rem;
+      margin: 0 1.5rem;
+      color:$primary;
+      position: relative;
+      cursor: pointer;
+      outline: none;
+      background: none;
+      text-transform: uppercase;
+    }
+  }
+  & a::after {
+    content: "";
+    display: block;
+    font-size: 1rem;
+    height: 0.2rem;
+    background: #FFC148;
+    position: absolute;
+    width: 100%;
+    left: 0px;
+    bottom: 0.5rem;
+    transition: transform 0.3s ease;
+    transform: scale(0, 1);
+  }
+  & a:hover::after {
+    transform: scale(1, 1);
+  }
+  & a:focus::after {
+    transform: scale(1, 1);
+  }
+  &--active::after {
+    transform: scale(1, 1);
+  }
+  i {
+    display: none;
+  }
+}

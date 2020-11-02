@@ -1,5 +1,7 @@
-$base-colorBlue: #509cff;
-$intermediate-colorBlue: #73b0ff;
+$primary: #E37500;
+$secondary: #FFC148;
+$base-colorBlue: #E37500;
+$intermediate-colorBlue: #E37500;
 $light-colorBlue: #a7cdff;
 
 $base-colorGray: #616160;
@@ -25,6 +27,8 @@ body {
   margin: 0;
   box-sizing: border-box;
   padding: 0;
+  display: flex;
+
 }
 h1 {
   font-size: 40px;
