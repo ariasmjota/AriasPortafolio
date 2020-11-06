@@ -13,17 +13,17 @@ export const Portafolio = () => {
         <article className="home__bg">
           <img
             src={process.env.PUBLIC_URL + "/assets/images/bg1.png"}
-            alt="Mock up app"
+            alt="Background Maria Jose"
           ></img>
         </article>
         {/* Me */}
         <article className="home__hi">
           <section className="home__hi-top">
-            <div className="home__hi-top-title">
-              <JackInTheBox>
-                <p>HI, I’M MARÍA J</p>
-              </JackInTheBox>
-            </div>
+            <JackInTheBox>
+              <div className="home__hi-top-title">
+                <h1>HI, I’M MARÍA J</h1>
+              </div>
+            </JackInTheBox>
             <div className="home__hi-top--para">
               <p>
                 My <strong>creativity </strong>creativity allows me to build{" "}
@@ -86,24 +86,24 @@ export const Portafolio = () => {
         {/* What I do */}
         <section className="home__do">
           <article className="home__do-top">
-            <div className="home__hi-top-title">
-              <JackInTheBox>
-                <p>what i do?</p>
-              </JackInTheBox>
-            </div>
+            <JackInTheBox>
+              <div className="home__hi-top-title">
+                <h1>what i do?</h1>
+              </div>
+            </JackInTheBox>
           </article>
           <article className="home__do-bottom">
             <section className="home__do-bottom--one">
               <img
-                src={process.env.PUBLIC_URL + "/assets/images/me1.png"}
-                alt="Mock up app"
+                src={process.env.PUBLIC_URL + "/assets/images/m1.png"}
+                alt="Maria Jose Arias photo"
               ></img>
             </section>
             <section className="home__do-bottom--two">
               <div className="home__do-bottom--item">
                 <img
                   src={process.env.PUBLIC_URL + "/assets/svg/web.svg"}
-                  alt="Mock up app"
+                  alt="Skill web Maria Jose"
                 ></img>
                 <p className="home__hi-top--para">
                   Web, App and GameDevelopment
@@ -112,7 +112,7 @@ export const Portafolio = () => {
               <div className="home__do-bottom--item">
                 <img
                   src={process.env.PUBLIC_URL + "/assets/svg/ux.svg"}
-                  alt="Mock up app"
+                  alt="Skills UX Maria Jose"
                 ></img>
                 <p className="home__hi-top--para">
                   User Experience and User Interface
@@ -121,14 +121,14 @@ export const Portafolio = () => {
               <div className="home__do-bottom--item">
                 <img
                   src={process.env.PUBLIC_URL + "/assets/svg/research.svg"}
-                  alt="Mock up app"
+                  alt="Skills UR Maria Jose"
                 ></img>
                 <p className="home__hi-top--para">Research through Design</p>
               </div>
               <div className="home__do-bottom--item">
                 <img
                   src={process.env.PUBLIC_URL + "/assets/svg/prototype.svg"}
-                  alt="Mock up app"
+                  alt="Skills Prototype Maria Jose"
                 ></img>
                 <p className="home__hi-top--para">Prototyping</p>
               </div>
@@ -143,14 +143,13 @@ export const Portafolio = () => {
         </article>
         {/* Projects */}
         <section className="projects">
-          <div className="home__hi-top-title">
-            <Bounce>
-              <p>My projects</p>
-            </Bounce>
-          </div>
+          <JackInTheBox>
+            <div className="home__hi-top-title">
+              <h1>My projects</h1>
+            </div>
+          </JackInTheBox>
 
           <article className="projects__individual">
-
             <section className="projects__individuals">
               <img
                 className="projects__individuals--img"
@@ -170,7 +169,7 @@ export const Portafolio = () => {
                 src={process.env.PUBLIC_URL + "/assets/images/dmi.png"}
                 alt="Mock up app"
               ></img>
-              <article className="projects__individuals--do" >
+              <article className="projects__individuals--do">
                 <p className="home__hi-top--para">UR</p>
                 <p className="home__hi-top--para">UX</p>
                 <p className="home__hi-top--para">UI</p>
@@ -190,15 +189,17 @@ export const Portafolio = () => {
               </article>
             </section>
           </article>
-        
+
           <div className="home__hi-top-subtitle">
             <Bounce>
-              <p>See all</p>
+            <Link className="" to={"/work"}>
+              <a className="home__hi-top-subtitle">See all</a>
+              </Link>
             </Bounce>
           </div>
         </section>
-         {/* Contact */}
-         <article className="home__change2">
+        {/* Contact */}
+        <article className="home__change2">
           <img
             src={process.env.PUBLIC_URL + "/assets/svg/icon3.svg"}
             alt="Mock up app"
@@ -207,19 +208,19 @@ export const Portafolio = () => {
         <article className="home__bg">
           <img
             src={process.env.PUBLIC_URL + "/assets/images/bg2.png"}
-            alt="Mock up app"
+            alt="Backgorund Maria Jose"
           ></img>
         </article>
-       <section className="home__contact">
-        <section className="home__hi-top">
-        <div className="home__hi-top-title">
-              <JackInTheBox>
-                <p>cONTACT ME!</p>
-              </JackInTheBox>
-            </div>
-        </section>
-      
-            <section className="home__hi-bottom">
+        <section className="home__contact">
+          <section className="home__hi-top">
+            <JackInTheBox>
+              <div className="home__hi-top-title">
+                <h1>cONTACT ME!</h1>
+              </div>
+            </JackInTheBox>
+          </section>
+
+          <section className="home__hi-bottom">
             <div className="icons">
               <a
                 className="icons__home"
@@ -233,7 +234,7 @@ export const Portafolio = () => {
                 ></img>
               </a>
             </div>
-            
+
             <div className="icons">
               <a
                 className="icons__home"
@@ -253,6 +254,7 @@ export const Portafolio = () => {
                 className="icons__home"
                 target="pdf-frame"
                 href="/assets/documents/cv.pdf"
+                download
               >
                 <img
                   className="icons__home"
@@ -261,8 +263,8 @@ export const Portafolio = () => {
                 ></img>
               </a>
             </div>
-            </section>
-       </section>
+          </section>
+        </section>
         {/* End */}
       </section>
     </div>

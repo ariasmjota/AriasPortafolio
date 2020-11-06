@@ -1,12 +1,53 @@
 .about {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   width: 100%;
-  margin-bottom: 10%;
   justify-content: space-between;
   align-items: flex-start;
-  color: $base-colorGray;
 
+  &__hi {
+    margin-top: 10%;
+    position: absolute;
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 50%;
+    align-self: flex-end;
+    margin-right: 10%;
+
+    &-bottom {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+
+      p {
+        text-align: end;
+        width: 60%;
+        color: white;
+      }
+    }
+  }
+
+  &__do {
+    width: 90%;
+    margin-left: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    &-top {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  &__para {
+    color: $base-colorGray;
+    width: 55%;
+    text-align: center;
+  }
   &__left {
     display: flex;
     flex-direction: column;
@@ -33,28 +74,46 @@
       width: 100%;
     }
   }
-}
-.data {
-  display: flex;
-  width: 50%;
-  margin: 5% 0;
-  justify-content: space-between;
-  flex-direction: row;
-  color: white;
-
-  &__anchor {
-    color: white;
+  &__all {
     display: flex;
-    background-color: $base-colorBlue;
-    border-radius: 100%;
-    //Cambiar RESPONSIVE
-    width: 40px;
-    height: 40px;
-    font-size: 1.5rem;
-    i {
-      width: 40px;
-      height: 40px;
-      padding: 20%;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    margin-top: 2%;
+
+  }
+  &__skill {
+    display: flex;
+    flex-direction: column;
+align-items: center;
+
+img{
+  width: 9%;
+}
+    p {
+      color: $base-colorGray;
+    }
+    &-information {
+      display: flex;
+      flex-direction: column;
+      margin: 2%;
     }
   }
+  &__softwares {
+    margin-top: 2%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    img {
+      width: 30px;
+    }
+  }
+  &__icon {
+    margin-right: 5%;
+  }
+}
+
+mark {
+  background-color: $secondary;
+  color: $base-colorGray;
 }

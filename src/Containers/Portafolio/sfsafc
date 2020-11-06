@@ -110,3 +110,26 @@
           </div>
         </article>
       </section>
+
+       <ul className="navBar__menu">
+          <li>
+            <Link className="" to={"/"}>
+              <span>Home</span>
+            </Link>
+          </li>
+          <li>
+            <Link className="" to={"/about"}>
+              <span>About Me</span>
+            </Link>
+          </li>
+          <li>
+            <Link className="" to={"/contact"}>
+              <span>My Work</span>
+            </Link>
+          </li>
+          <li>
+            <Link className="" to={"/contact"}>
+              <span>Contact Me</span>
+            </Link>
+          </li>
+        </ul>

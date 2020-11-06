@@ -1,6 +1,6 @@
 .navBar {
   position: fixed;
-  z-index: 2;
+  z-index: 4;
   display: flex;
   width: 90%;
   margin: 2% 5%;
@@ -27,7 +27,10 @@
     position: relative;
     transition: all 0.4s ease;
 
-    & a {
+    &--none{
+      display: none;
+    }
+    & span {
       font-size: 1rem;
       margin: 0 1.5rem;
       color:$primary;
@@ -38,7 +41,7 @@
       text-transform: uppercase;
     }
   }
-  & a::after {
+  & span::after {
     content: "";
     display: block;
     font-size: 1rem;
@@ -51,10 +54,10 @@
     transition: transform 0.3s ease;
     transform: scale(0, 1);
   }
-  & a:hover::after {
+  & span:hover::after {
     transform: scale(1, 1);
   }
-  & a:focus::after {
+  & span:focus::after {
     transform: scale(1, 1);
   }
   &--active::after {

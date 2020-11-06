@@ -1,292 +1,252 @@
 import * as React from "react";
 import { JackInTheBox, Bounce } from "react-awesome-reveal";
-import { Link } from "react-router-dom";
 import { Nav } from "../Nav/Nav";
 
 export const About = () => {
   return (
-    <div>
+    <div id="about">
       <Nav />
-      <section id="/about" className="about">
-        <article className="about__left">
-          <section className="about__left-top">
-            <div className="home__titles-four">
-              <Bounce>
-                <p>María José</p>
-              </Bounce>
-            </div>
-            <div className="home__titles-three">
-              <Bounce>
-                <p>Arias B.</p>
-              </Bounce>
-            </div>
-            <article className="data">
-              <a
-                className="data__anchor"
-                target="_blank"
-                href="https://www.behance.net/ariasmjota"
-              >
-                <i className="fab fa-behance"></i>
-              </a>
-              <a
-                className="data__anchor"
-                target="_blank"
-                href="https://www.linkedin.com/in/ariasmjota/"
-              >
-                <i className="fab fa-linkedin-in"></i>
-              </a>
-              <a
-                className="data__anchor"
-                target="_blank"
-                href="https://github.com/ariasmjota"
-              >
-                <i className="fab fa-github"></i>
-              </a>
-              <a
-                className="data__anchor"
-                id="downloadCV"
-                href="assets/documents/Santiago Mondragón Resume.pdf"
-                target="pdf-frame"
-              >
-                <i className="fas fa-file-download"></i>
-              </a>
-            </article>
+      <section className="about">
+        <article className="home__bg">
+          <img
+            src={process.env.PUBLIC_URL + "/assets/images/m2.png"}
+            alt="Mock up app"
+          ></img>
+        </article>
+        {/* Me */}
+        <article className="about__hi">
+          <section className="home__hi-top">
+            <JackInTheBox>
+              <div className="home__hi-top-title">
+                <h1>HI!</h1>
+              </div>
+            </JackInTheBox>
           </section>
-          <section className="about__left-bottom">
-            <p>
-              I love to shape design projects by iterating, iterating and
-              iterating.
+          <div className="about__hi-bottom">
+            <p className="home__hi-top-subtitle">
+              I'm <strong>María Jose Arias</strong>
             </p>
             <br></br>
             <p>
-              As a UX researcher, I identify the user’s needs and objectives, I
-              also establish the test work models and I carry out the subsequent
-              analysis of the information obtained from these. Additionally, I
-              get to the deliver the reports that are based on the design
-              research that is focused on the user. And my role as a UX
-              designer, focuses on designing solid solutions to perceived
-              problems previously found on a user-centered research.
+              I'm 20 years old Colombian ‘Interactive Designer’ from ICESI
+              University.
             </p>
-          </section>
-        </article>
-        <article className="about__right">
-          <img
-            className="about__right-photo"
-            src={process.env.PUBLIC_URL + "/assets/images/memac.png"}
-            alt="Photo Maria Arias"
-          ></img>
-          <p>
-            In my role as a product designer, I am part of the process of
-            creating products that generate experiences in the user, having as a
-            starting point the definition of real problems in us, human beings,
-            to think about possible satisfactory solutions.
-          </p>
-        </article>
-      </section>
-      <section className="skillsandexpertice">
-        <section className="skills">
-          <article className="skills__tittle">
-            <div className="home__titles-four">
-              <Bounce>
-                <p>Skills</p>
-              </Bounce>
-            </div>
-          </article>
-          <ul className="skills__menu">
-            <li>
-              <a>
-                <span>Js</span>
-              </a>
-            </li>
-            <li>
-              <a>
-                <span>UX</span>
-              </a>
-            </li>
-            <li>
-              <a>
-                <span>UR</span>
-              </a>
-            </li>
-            <li>
-              <a>
-                <span>UI</span>
-              </a>
-            </li>
-          </ul>
-          <article className="skills__sections">
-            <article className="skills__explications">
-              <div
-                id="skills__explications-web"
-                className="skills__explications-web"
-              >
-                <h2>Front-end Development</h2>
-                <p>
-                  Able to define the form, function, usability, ergonomics,
-                  brand image and other aspects that affect the external
-                  appearance of user interfaces in systems of all types, all
-                  this through principles of visual and graphic design.
-                </p>
-                <div className="software">
-                  <i className="fab fa-css3-alt"></i>
-                  <i className="fab fa-html5"></i>
-                  <i className="fab fa-js"></i>
-                  <i className="fab fa-react"></i>
-                </div>
-              </div>
-
-              <div id="skills__explications-ux" className="content">
-                <h2>User Experience Design</h2>
-                <p>
-                  Able to create products, solutions or prototypes, combining
-                  different kinds of methodologies, that customers / users would
-                  be attracted to, be easy to use and quickly to understand, in
-                  order to bring them the best experience possible.
-                </p>
-
-                <div className="software">
-                  <i className="fab fa-adobe"></i>
-                  <i className="fab fa-figma"></i>
-                  <i className="fab fa-invision"></i>
-                </div>
-              </div>
-
-              <div id="skills__explications-ui" className="content">
-                <h2>User Interface Design</h2>
-                <p>
-                  Able to define the form, function, usability, ergonomics,
-                  brand image and other aspects that affect the external
-                  appearance of user interfaces in systems of all types, all
-                  this through principles of visual and graphic design.
-                </p>
-
-                <div className="software">
-                  <i className="fab fa-adobe"></i>
-                  <i className="fab fa-figma"></i>
-                </div>
-              </div>
-
-              <div id="skills__explications-ur" className="content">
-                <h2>User Research</h2>
-                <p>
-                  Able to define the form, function, usability, ergonomics,
-                  brand image and other aspects that affect the external
-                  appearance of user interfaces in systems of all types, all
-                  this through principles of visual and graphic design.
-                </p>
-
-                <div className="software">
-                  <i className="fas fa-eye"></i>
-                  <i className="fas fa-sticky-note"></i>
-                  <i className="fas fa-book-reader"></i>
-                  <i className="fas fa-map"></i>
-                  <i className="fas fa-clipboard-list"></i>
-                </div>
-              </div>
-            </article>
-          </article>
-        </section>
-
-        <article className="expertise">
-          <article className="expertise__tittle">
-            <div className="home__titles-four">
-              <Bounce>
-                <p>expertise</p>
-              </Bounce>
-            </div>
-          </article>
-          <ul className="expertise__menu">
-            <li>
-              <a>
-                <span>LS</span>
-              </a>
-            </li>
-            <li>
-              <a>
-                <span>TW</span>
-              </a>
-            </li>
-            <li>
-              <a>
-                <span>AT</span>
-              </a>
-            </li>
-            <li>
-              <a>
-                <span>BF</span>
-              </a>
-            </li>
-          </ul>
-          <div className="skills__sections">
-            <article className="skills__explications">
-              <div id="leaderContent" className="skills__explications">
-                <h2>Leadership</h2>
-                <p>
-                  Able to define the form, function, usability, ergonomics,
-                  brand image and other aspects that affect the external
-                  appearance of user interfaces in systems of all types, all
-                  this through principles of visual and graphic design.
-                </p>
-
-                <div className="software">
-                  <i className="fas fa-users"></i>
-                  <i className="fas fa-chalkboard-teacher"></i>
-                  <i className="fas fa-balance-scale"></i>
-                </div>
-              </div>
-
-              <div id="teamContent" className="skills__explications">
-                <h2>TeamWork</h2>
-                <p>
-                  Able to create products, solutions or prototypes, combining
-                  different kinds of methodologies, that customers / users would
-                  be attracted to, be easy to use and quickly to understand, in
-                  order to bring them the best experience possible.
-                </p>
-
-                <div className="software">
-                  <i className="fas fa-comments"></i>
-                  <i className="fab fa-slack"></i>
-                  <i className="fas fa-handshake"></i>
-                </div>
-              </div>
-
-              <div id="analyticContent" className="skills__explications">
-                <h2>Analytical Thinking</h2>
-                <p>
-                  Able to define the form, function, usability, ergonomics,
-                  brand image and other aspects that affect the external
-                  appearance of user interfaces in systems of all types, all
-                  this through principles of visual and graphic design.
-                </p>
-
-                <div className="software">
-                  <i className="fas fa-puzzle-piece"></i>
-                  <i className="fas fa-map-signs"></i>
-                  <i className="fas fa-cogs"></i>
-                </div>
-              </div>
-
-              <div id="businessContent" className="skills__explications">
-                <h2>Business Focused</h2>
-                <p>
-                  Able to define the form, function, usability, ergonomics,
-                  brand image and other aspects that affect the external
-                  appearance of user interfaces in systems of all types, all
-                  this through principles of visual and graphic design.
-                </p>
-
-                <div className="software">
-                  <i className="fas fa-chart-line"></i>
-                  <i className="fas fa-percent"></i>
-                  <i className="fas fa-dollar-sign"></i>
-                </div>
-              </div>
-            </article>
+            <br></br>
+            <p>
+              {" "}
+              I’ve worked with <mark>user experience</mark> and{" "}
+              <mark>development</mark>.
+            </p>
           </div>
         </article>
+        <article className="home__change">
+          <img
+            src={process.env.PUBLIC_URL + "/assets/svg/icon1.svg"}
+            alt="Mock up app"
+          ></img>
+        </article>
+        <section className="about__do">
+          <article className="about__do-top">
+            <JackInTheBox>
+              <div className="home__hi-top-title">
+                <h1>what i do?</h1>
+              </div>
+            </JackInTheBox>
+            <section className="about__para">
+              <p>
+                I'm able to conduct and manage <mark>research</mark>, ideation
+                and iteration of digital products in order to <mark>make</mark>{" "}
+                them <mark>human-centered </mark>, strategic for business,
+                easy-to-use and visually appealing.
+              </p>
+            </section>
+          </article>
+          {/* Skills */}
+          <section className="about__all">
+            <div className="about__skill">
+              <img
+                src={process.env.PUBLIC_URL + "/assets/svg/web.svg"}
+                alt="Mock up app"
+              ></img>
+              <article className="about__skill-information">
+                <p className="home__hi-top--para">
+                  Web, App and GameDevelopment
+                </p>
+                <section className="about__softwares">
+                  <div className="about__icon">
+                    <img
+                      src={
+                        process.env.PUBLIC_URL +
+                        "/assets/svg/software/new/html.svg"
+                      }
+                      alt="Mock up app"
+                    ></img>
+                  </div>
+                  <div className="about__icon">
+                    <img
+                      src={
+                        process.env.PUBLIC_URL +
+                        "/assets/svg/software/new/css.svg"
+                      }
+                      alt="Mock up app"
+                    ></img>
+                  </div>
+                  <div className="about__icon">
+                    <img
+                      src={
+                        process.env.PUBLIC_URL +
+                        "/assets/svg/software/new/sass.svg"
+                      }
+                      alt="Mock up app"
+                    ></img>
+                  </div>
+                  <div className="about__icon">
+                    <img
+                      src={
+                        process.env.PUBLIC_URL +
+                        "/assets/svg/software/new/js.svg"
+                      }
+                      alt="Mock up app"
+                    ></img>
+                  </div>
+                  <div className="about__icon">
+                    <img
+                      src={
+                        process.env.PUBLIC_URL +
+                        "/assets/svg/software/new/react.svg"
+                      }
+                      alt="Mock up app"
+                    ></img>
+                  </div>
+                  <div className="about__icon">
+                    <img
+                      src={
+                        process.env.PUBLIC_URL +
+                        "/assets/svg/software/new/git.svg"
+                      }
+                      alt="Mock up app"
+                    ></img>
+                  </div>
+                </section>
+              </article>
+            </div>
+            <div className="about__skill">
+              <img
+                src={process.env.PUBLIC_URL + "/assets/svg/ux.svg"}
+                alt="Mock up app"
+              ></img>
+              <article className="about__skill-information">
+                <p className="home__hi-top--para">
+                  User Experience and User Interface
+                </p>
+                <section className="about__softwares">
+                  <div className="about__icon">
+                    <img
+                      src={
+                        process.env.PUBLIC_URL +
+                        "/assets/svg/software/new/view.svg"
+                      }
+                      alt="Mock up app"
+                    ></img>
+                  </div>
+                  <div className="about__icon">
+                    <img
+                      src={
+                        process.env.PUBLIC_URL +
+                        "/assets/svg/software/new/document.svg"
+                      }
+                      alt="Mock up app"
+                    ></img>
+                  </div>
+                  <div className="about__icon">
+                    <img
+                      src={
+                        process.env.PUBLIC_URL +
+                        "/assets/svg/software/new/illus.svg"
+                      }
+                      alt="Mock up app"
+                    ></img>
+                  </div>
+                  <div className="about__icon">
+                    <img
+                      src={
+                        process.env.PUBLIC_URL +
+                        "/assets/svg/software/new/figma.svg"
+                      }
+                      alt="Mock up app"
+                    ></img>
+                  </div>
+                  <div className="about__icon">
+                    <img
+                      src={
+                        process.env.PUBLIC_URL +
+                        "/assets/svg/software/new/photo.svg"
+                      }
+                      alt="Mock up app"
+                    ></img>
+                  </div>
+                  <div className="about__icon">
+                    <img
+                      src={
+                        process.env.PUBLIC_URL +
+                        "/assets/svg/software/new/after.svg"
+                      }
+                      alt="Mock up app"
+                    ></img>
+                  </div>
+                </section>
+              </article>
+            </div>
+            <div className="about__skill">
+              <img
+                src={process.env.PUBLIC_URL + "/assets/svg/research.svg"}
+                alt="Mock up app"
+              ></img>
+              <article className="about__skill-information">
+                <p className="home__hi-top--para">Research through Design</p>
+                <section className="about__softwares">
+                  <div className="about__icon">
+                    <img
+                      src={
+                        process.env.PUBLIC_URL +
+                        "/assets/svg/software/new/view.svg"
+                      }
+                      alt="Mock up app"
+                    ></img>
+                  </div>
+                  <div className="about__icon">
+                    <img
+                      src={
+                        process.env.PUBLIC_URL +
+                        "/assets/svg/software/new/document.svg"
+                      }
+                      alt="Mock up app"
+                    ></img>
+                  </div>
+                  <div className="about__icon">
+                    <img
+                      src={
+                        process.env.PUBLIC_URL +
+                        "/assets/svg/software/new/inter.svg"
+                      }
+                      alt="Mock up app"
+                    ></img>
+                  </div>
+                  <div className="about__icon">
+                    <img
+                      src={
+                        process.env.PUBLIC_URL +
+                        "/assets/svg/software/new/task.svg"
+                      }
+                      alt="Mock up app"
+                    ></img>
+                  </div>
+                </section>
+              </article>
+            </div>
+          </section>
+        </section>
       </section>
-     
     </div>
   );
 };

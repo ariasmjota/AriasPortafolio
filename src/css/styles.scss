@@ -31,26 +31,19 @@ body {
 
 }
 h1 {
-  font-size: 40px;
+  font-size: 1.5rem;
   line-height: 1.5;
-  letter-spacing: -0.2px;
-  color: white;
-  margin: 0;
-  /* margin: 100px 150px 70px 30px; */
-  /* text-transform: uppercase; */
-  /* text-decoration: dashed; */
-}
-h1 {
-  font-size: 3rem;
+  color: $primary;
+  margin-bottom: 20%;
   font-weight: 900;
   text-transform: uppercase;
-  letter-spacing: 3rem;
+  letter-spacing: 1.5rem;
 }
+
 h2 {
-  color:$light-colorBlue;
   text-transform: uppercase;
   font-weight: 300;
-  font-size: 1.5rem;
+  font-size: 100px;
   letter-spacing: 1rem;
 }
 
@@ -67,12 +60,15 @@ p,
 span,
 li {
   list-style-type: none;
-  font-size: o.5rem;
+  font-size: 1rem;
   text-decoration: none;
 }
 
 @import "./Nav";
 @import "./Home";
 @import "./About";
+@import "./Contact";
 @import "./Skills";
 @import "./Projects";
+@import "./Works";
+
