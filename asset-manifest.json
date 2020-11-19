@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/AriasPortafolio/static/css/main.1aa6e871.chunk.css",
+    "main.css": "/AriasPortafolio/static/css/main.fe68ede8.chunk.css",
     "main.js": "/AriasPortafolio/static/js/main.753e9e7d.chunk.js",
     "main.js.map": "/AriasPortafolio/static/js/main.753e9e7d.chunk.js.map",
     "runtime-main.js": "/AriasPortafolio/static/js/runtime-main.4684334f.js",
@@ -8,15 +8,15 @@
     "static/js/2.e3016c78.chunk.js": "/AriasPortafolio/static/js/2.e3016c78.chunk.js",
     "static/js/2.e3016c78.chunk.js.map": "/AriasPortafolio/static/js/2.e3016c78.chunk.js.map",
     "index.html": "/AriasPortafolio/index.html",
-    "precache-manifest.1e1da3a08c298d84cb2a9d2c466c44f8.js": "/AriasPortafolio/precache-manifest.1e1da3a08c298d84cb2a9d2c466c44f8.js",
+    "precache-manifest.ce3b43aa208e4cfad193d542236bd444.js": "/AriasPortafolio/precache-manifest.ce3b43aa208e4cfad193d542236bd444.js",
     "service-worker.js": "/AriasPortafolio/service-worker.js",
-    "static/css/main.1aa6e871.chunk.css.map": "/AriasPortafolio/static/css/main.1aa6e871.chunk.css.map",
+    "static/css/main.fe68ede8.chunk.css.map": "/AriasPortafolio/static/css/main.fe68ede8.chunk.css.map",
     "static/js/2.e3016c78.chunk.js.LICENSE.txt": "/AriasPortafolio/static/js/2.e3016c78.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.4684334f.js",
     "static/js/2.e3016c78.chunk.js",
-    "static/css/main.1aa6e871.chunk.css",
+    "static/css/main.fe68ede8.chunk.css",
     "static/js/main.753e9e7d.chunk.js"
   ]
 }
