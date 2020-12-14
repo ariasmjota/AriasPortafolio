@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/AriasPortafolio/static/css/main.ae87c6ef.chunk.css",
-    "main.js": "/AriasPortafolio/static/js/main.b0d87e5a.chunk.js",
-    "main.js.map": "/AriasPortafolio/static/js/main.b0d87e5a.chunk.js.map",
+    "main.js": "/AriasPortafolio/static/js/main.b6551ab9.chunk.js",
+    "main.js.map": "/AriasPortafolio/static/js/main.b6551ab9.chunk.js.map",
     "runtime-main.js": "/AriasPortafolio/static/js/runtime-main.4684334f.js",
     "runtime-main.js.map": "/AriasPortafolio/static/js/runtime-main.4684334f.js.map",
     "static/js/2.d6d29993.chunk.js": "/AriasPortafolio/static/js/2.d6d29993.chunk.js",
     "static/js/2.d6d29993.chunk.js.map": "/AriasPortafolio/static/js/2.d6d29993.chunk.js.map",
     "index.html": "/AriasPortafolio/index.html",
-    "precache-manifest.d96ae16c07861c7f8a4d80d404526e97.js": "/AriasPortafolio/precache-manifest.d96ae16c07861c7f8a4d80d404526e97.js",
+    "precache-manifest.341351d7d6c055b6d816f244892b71ed.js": "/AriasPortafolio/precache-manifest.341351d7d6c055b6d816f244892b71ed.js",
     "service-worker.js": "/AriasPortafolio/service-worker.js",
     "static/css/main.ae87c6ef.chunk.css.map": "/AriasPortafolio/static/css/main.ae87c6ef.chunk.css.map",
     "static/js/2.d6d29993.chunk.js.LICENSE.txt": "/AriasPortafolio/static/js/2.d6d29993.chunk.js.LICENSE.txt"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.4684334f.js",
     "static/js/2.d6d29993.chunk.js",
     "static/css/main.ae87c6ef.chunk.css",
-    "static/js/main.b0d87e5a.chunk.js"
+    "static/js/main.b6551ab9.chunk.js"
   ]
 }
