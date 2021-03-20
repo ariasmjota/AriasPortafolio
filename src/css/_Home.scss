@@ -20,7 +20,7 @@
     z-index: 2;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
     top: 10%;
     width: 90%;
     height: 70%;
@@ -31,7 +31,7 @@
       align-items: flex-end;
 
       &-title {
-        color: $primary;
+        color: $secondary;
       }
       &-subtitle {
         color: $secondary;
@@ -135,9 +135,19 @@
 .icons {
   display: flex;
   width: 100%;
+  position: relative;
   &__home {
     width: 50%;
     align-items: flex-end;
+  }
+
+  &__home img:hover {
+    background: $primary;
+    border-radius: 100%;
+    color: white;
+    position: absolute;
+    width: 35%;
+    transition: transform 0.3s ease;
   }
 }
 .projects {
@@ -161,6 +171,7 @@
 
     img {
       width: 70%;
+      border-radius: 10px;
     }
     &--do {
       background-color: $secondary;

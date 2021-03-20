@@ -1,7 +1,9 @@
 import * as React from "react";
 import { HashRouter as Router, Route, Link } from "react-router-dom";
+import { HamburgerArrow } from "react-animated-burgers";
 
 export const Nav = () => {
+
   return (
     <div>
       <section className="navBar">
@@ -11,11 +13,10 @@ export const Nav = () => {
           alt="Logo Maria Arias"
         ></img>
 
-        <ul  className="navBar__menu">
+        <ul className="navBar__menu">
           <li>
             <Link className="" to={"/"}>
               <span>Home</span>
-              
             </Link>
           </li>
           <li>

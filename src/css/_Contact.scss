@@ -1,8 +1,13 @@
-.contact{
-    position: absolute;
-    z-index: 3;
-    top: 40%;
-display: flex;
-justify-content: flex-end;
-width: 80%;
+.contact {
+  position: absolute;
+  z-index: 3;
+  top: 40%;
+  display: flex;
+  justify-content: flex-end;
+  width: 80%;
+  &_p{
+      margin-bottom: 5%;
+      text-align: end;
+      width: 35%;
+  }
 }

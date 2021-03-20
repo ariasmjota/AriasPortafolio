@@ -1,8 +1,5 @@
-$primary: #E37500;
-$secondary: #FFC148;
-$base-colorBlue: #E37500;
-$intermediate-colorBlue: #E37500;
-$light-colorBlue: #a7cdff;
+$primary: #e37500;
+$secondary: #ffc148;
 
 $base-colorGray: #616160;
 $intermediate-colorGray: #7c7c7c;
@@ -11,6 +8,30 @@ $light-colorGray: #acacab;
 html {
   font-size: 100%; /* 100% = 16px */
 
+  /* width */
+  ::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+  }
+
+  /* Track */
+  ::-webkit-scrollbar-track {
+    border-radius: 10px;
+  }
+
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: $secondary;
+    border-radius: 10px;
+  }
+
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: $primary;
+  }
+  ::-webkit-scrollbar-track:active {
+    background: $light-colorGray;
+  }
   & a,
   p {
     text-decoration: none;
@@ -21,14 +42,12 @@ html {
     padding: 0;
   }
 }
-
 body {
   font-family: "Neue Haas Grotesk Display Pro", sans-serif;
   margin: 0;
   box-sizing: border-box;
   padding: 0;
   display: flex;
-
 }
 h1 {
   font-size: 1.5rem;
@@ -63,7 +82,10 @@ li {
   font-size: 1rem;
   text-decoration: none;
 }
-
+::selection {
+  color: white;
+  background: $primary;
+}
 @import "./Nav";
 @import "./Home";
 @import "./About";
@@ -71,4 +93,4 @@ li {
 @import "./Skills";
 @import "./Projects";
 @import "./Works";
-
+@import "./WorkIndividual";

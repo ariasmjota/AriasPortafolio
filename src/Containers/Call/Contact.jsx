@@ -1,29 +1,35 @@
 import * as React from "react";
-import { JackInTheBox, Bounce } from "react-awesome-reveal";
+import { JackInTheBox, Fade } from "react-awesome-reveal";
 import { Nav } from "../Nav/Nav";
 
 export const Contact = () => {
   return (
     <div id="contact">
       <Nav />
-      <article className="home__bg">
+      <Fade direction="down" triggerOnce="true">
+        <article className="home__bg">
           <img
             src={process.env.PUBLIC_URL + "/assets/images/bg2.png"}
             alt="Mock up app"
           ></img>
         </article>
         <section className="home__contact">
-        <section className="home__hi-top">
-        <JackInTheBox>
-        <div className="home__hi-top-title">
-              
+          <section className="home__hi-top">
+            <JackInTheBox>
+              <div className="home__hi-top-title">
                 <h1>cONTACT ME!</h1>
-             
-            </div>
+              </div>
             </JackInTheBox>
-        </section>
-      
-            <section className="home__hi-bottom">
+            <div className="contact_p">
+              <p className="home__hi-top--para">
+                Let's get in <mark>contact</mark> and find out how I can help
+                you. I leave you
+                <mark>different</mark> ways to find me.
+              </p>
+            </div>
+          </section>
+
+          <section className="home__hi-bottom">
             <div className="icons">
               <a
                 className="icons__home"
@@ -37,7 +43,7 @@ export const Contact = () => {
                 ></img>
               </a>
             </div>
-            
+
             <div className="icons">
               <a
                 className="icons__home"
@@ -56,7 +62,9 @@ export const Contact = () => {
               <a
                 className="icons__home"
                 target="pdf-frame"
-                href="/assets/documents/cv.pdf"
+                download
+                src={process.env.PUBLIC_URL + "/assets/documents/cv.pdf"}
+                href={process.env.PUBLIC_URL + "/assets/documents/cv.pdf"}
               >
                 <img
                   className="icons__home"
@@ -65,8 +73,9 @@ export const Contact = () => {
                 ></img>
               </a>
             </div>
-            </section>
-         </section>
+          </section>
+        </section>
+      </Fade>
     </div>
   );
 };

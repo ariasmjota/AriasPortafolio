@@ -1,16 +1,27 @@
-.works{
-    display: flex;
-    width: 80%;
-    flex-direction: column;
-    justify-content: space-between;
-    position: absolute;
-    z-index: 2;
-    margin-top: -60%;
+.works {
+  display: flex;
+align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  position: absolute;
+  z-index: 2;
+  margin-top: -60%;
 
-    &__individual{
-        display: flex;
-        flex-direction: row;
-        
+  &__individual {
+    display: flex;
+    flex-direction: row;
+    margin-left: 7.5%;
+    justify-content: space-between;
+    width: 80%;
+  }
+
+  &__bg {
+    position: fixed;
+    display: flex;
+    z-index: 1;
+    width: 100%;
+    img {
+      width: 100%;
     }
+  }
 }
-@import "./Works/Gomunch"

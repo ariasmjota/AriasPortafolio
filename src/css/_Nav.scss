@@ -2,22 +2,27 @@
   position: fixed;
   z-index: 4;
   display: flex;
-  width: 90%;
-  margin: 2% 5%;
+  width: 100%;
+  background-color: white;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
 
   & ul {
-    margin: 0;
+    margin-right: 5%;
   }
 
   &__logo {
     display: flex;
-    width: 3%;
-    color:$primary;
-    img{
-        color: $primary;
+    margin-left: 5%;
+    width: 2%;
+    color: $primary;
+
+    path {
+      fill: $primary;
+    }
+    img {
+      color: $primary;
     }
   }
 
@@ -27,13 +32,13 @@
     position: relative;
     transition: all 0.4s ease;
 
-    &--none{
+    &--none {
       display: none;
     }
     & span {
-      font-size: 1rem;
-      margin: 0 1.5rem;
-      color:$primary;
+      font-size: 0.8rem;
+      margin: 0 0.5rem;
+      color: #e37500;
       position: relative;
       cursor: pointer;
       outline: none;
@@ -45,12 +50,12 @@
     content: "";
     display: block;
     font-size: 1rem;
-    height: 0.2rem;
-    background: #FFC148;
+    height: 0.1rem;
+    background: #ffc148;
     position: absolute;
     width: 100%;
     left: 0px;
-    bottom: 0.5rem;
+    bottom: 0.4rem;
     transition: transform 0.3s ease;
     transform: scale(0, 1);
   }

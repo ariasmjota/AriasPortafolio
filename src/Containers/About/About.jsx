@@ -1,5 +1,5 @@
 import * as React from "react";
-import { JackInTheBox, Bounce } from "react-awesome-reveal";
+import { JackInTheBox, Bounce, Fade } from "react-awesome-reveal";
 import { Nav } from "../Nav/Nav";
 
 export const About = () => {
@@ -7,12 +7,14 @@ export const About = () => {
     <div id="about">
       <Nav />
       <section className="about">
-        <article className="home__bg">
-          <img
-            src={process.env.PUBLIC_URL + "/assets/images/m2.png"}
-            alt="Mock up app"
-          ></img>
-        </article>
+        <Fade direction="down" triggerOnce="true">
+          <article className="home__bg">
+            <img
+              src={process.env.PUBLIC_URL + "/assets/images/m2.png"}
+              alt="Mock up app"
+            ></img>
+          </article>
+        </Fade>
         {/* Me */}
         <article className="about__hi">
           <section className="home__hi-top">
@@ -39,6 +41,7 @@ export const About = () => {
             </p>
           </div>
         </article>
+
         <article className="home__change">
           <img
             src={process.env.PUBLIC_URL + "/assets/svg/icon1.svg"}
@@ -53,7 +56,7 @@ export const About = () => {
               </div>
             </JackInTheBox>
             <section className="about__para">
-              <p>
+              <p className="home__hi-top--para">
                 I'm able to conduct and manage <mark>research</mark>, ideation
                 and iteration of digital products in order to <mark>make</mark>{" "}
                 them <mark>human-centered </mark>, strategic for business,
@@ -139,6 +142,7 @@ export const About = () => {
                 <p className="home__hi-top--para">
                   User Experience and User Interface
                 </p>
+
                 <section className="about__softwares">
                   <div className="about__icon">
                     <img
